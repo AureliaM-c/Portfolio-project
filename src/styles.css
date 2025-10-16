@@ -86,6 +86,7 @@ p {
 }
 
 .weather-app-description {
+  margin-top: 40px;
   padding: 40px 60px;
 }
 
