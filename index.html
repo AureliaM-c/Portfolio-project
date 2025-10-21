@@ -40,89 +40,129 @@
     <title>Portfolio Project</title>
   </head>
   <body>
-    <div class="hero">
-      <p>👋 Hi, I am</p>
-      <h1>Aurelia Mourey</h1>
-      <h2>Front-end developer based in London, UK.</h2>
-      <div>
-        <a href="/contact.html" class="btn btn-branding">Contact me</a>
-      </div>
-    </div>
-    <p class="text-center m-5">
-      Please see below a selection of some of the best project I worked on
-    </p>
-    <div class="container">
-      <div class="row">
-        <div class="col d-none d-lg-block">
-          <img
-            src="src/images/world-clock.png"
-            alt="World Clock App"
-            class="world-clock-image img-fluid"
-          />
-        </div>
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+      <div
+        class="w-100 d-flex justify-content-between align-items-center px-3 px-md-5"
+      >
+        <a class="navbar-brand" href="/index.html">
+          <img src="src/images/logo.png" alt="Logo" class="logo" />
+        </a>
 
-        <div class="col-lg-6 col-12 mx-auto mb-5">
-          <div class="project-description text-center">
-            <h2 class="mb-5">World Clock App</h2>
-            <p class="mb-4 text-muted">
-              A web application that displays the current time in various cities
-              around the world. Users can view the time in different time zones.
-              The application gives the real time for some cities around the
-              world but also gives the user the possibility to choose other
-              cities with a dropdown menu.
-            </p>
-            <a href="" class="btn btn-branding-outline">Learn more</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/work.html">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content-container">
+      <div class="hero">
+        <p>👋 Hi, I am</p>
+        <h1>Aurelia Mourey</h1>
+        <h2>Front-end developer based in London, UK.</h2>
+        <div>
+          <a href="/contact.html" class="btn btn-branding">Contact me</a>
+        </div>
+      </div>
+      <p class="text-center m-5">
+        Please see below a selection of some of the best project I worked on
+      </p>
+      <div class="container">
+        <div class="row">
+          <div class="col d-none d-lg-block">
+            <img
+              src="src/images/world-clock.png"
+              alt="World Clock App"
+              class="world-clock-image img-fluid"
+            />
+          </div>
+
+          <div class="col-lg-6 col-12 mx-auto mb-5">
+            <div class="project-description text-center">
+              <h2 class="mb-5">World Clock App</h2>
+              <p class="mb-4 text-muted">
+                A web application that displays the current time in various
+                cities around the world. Users can view the time in different
+                time zones. The application gives the real time for some cities
+                around the world but also gives the user the possibility to
+                choose other cities with a dropdown menu.
+              </p>
+              <a href="" class="btn btn-branding-outline">Learn more</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 col-12 mx-auto mb-5">
-          <div class="weather-app-description text-center">
-            <h2 class="mb-5">Weather Forecast App</h2>
-            <p class="mb-4 text-muted">
-              Stay ahead of the weather anywhere in the world with this
-              intuitive web application. Users can enter the name of any city to
-              instantly view the current conditions and a detailed 5-day
-              forecast. The app displays key data like temperature, humidity,
-              and weather descriptions with a clean, responsive interface.
-            </p>
-            <a href="#" class="btn btn-branding-outline">Learn more</a>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-12 mx-auto mb-5">
+            <div class="weather-app-description text-center">
+              <h2 class="mb-5">Weather Forecast App</h2>
+              <p class="mb-4 text-muted">
+                Stay ahead of the weather anywhere in the world with this
+                intuitive web application. Users can enter the name of any city
+                to instantly view the current conditions and a detailed 5-day
+                forecast. The app displays key data like temperature, humidity,
+                and weather descriptions with a clean, responsive interface.
+              </p>
+              <a href="#" class="btn btn-branding-outline">Learn more</a>
+            </div>
+          </div>
+
+          <div class="col d-none d-lg-block text-center">
+            <img
+              src="src/images/weather-forecast-app.PNG"
+              alt="Weather Forecast App"
+              class="weather-forecast-image img-fluid"
+            />
           </div>
         </div>
-
-        <div class="col d-none d-lg-block text-center">
-          <img
-            src="src/images/weather-forecast-app.PNG"
-            alt="Weather Forecast App"
-            class="weather-forecast-image img-fluid"
-          />
-        </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col d-none d-lg-block">
-          <img
-            src="src/images/french-poem-generator.png"
-            alt="World Clock App"
-            class="world-clock-image img-fluid"
-          />
-        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col d-none d-lg-block">
+            <img
+              src="src/images/french-poem-generator.png"
+              alt="World Clock App"
+              class="world-clock-image img-fluid"
+            />
+          </div>
 
-        <div class="col-lg-6 col-12 mx-auto mb-5">
-          <div class="project-description text-center">
-            <h2 class="mb-5">French Poem Generator</h2>
-            <p class="mb4 text-muted">
-              Let words dance à la française! This elegant app instantly
-              generates a beautiful French poem based on the theme you choose —
-              love, friendship, nature, dreams, and more. Simply type your
-              subject, and watch as lyrical verses appear, filled with charm,
-              rhythm, and emotion. Perfect for romantic souls, language
-              learners, or anyone who loves the magic of words.
-            </p>
-            <a href="" class="btn btn-branding-outline">Learn more</a>
+          <div class="col-lg-6 col-12 mx-auto mb-5">
+            <div class="project-description text-center">
+              <h2 class="mb-5">French Poem Generator</h2>
+              <p class="mb4 text-muted">
+                Let words dance à la française! This elegant app instantly
+                generates a beautiful French poem based on the theme you choose
+                — love, friendship, nature, dreams, and more. Simply type your
+                subject, and watch as lyrical verses appear, filled with charm,
+                rhythm, and emotion. Perfect for romantic souls, language
+                learners, or anyone who loves the magic of words.
+              </p>
+              <a href="" class="btn btn-branding-outline">Learn more</a>
+            </div>
           </div>
         </div>
       </div>
