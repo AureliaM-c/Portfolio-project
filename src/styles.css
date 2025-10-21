@@ -1,12 +1,13 @@
 :root {
   --branding-color: #6c63ff;
   --secondary-color: #f9f7fe;
-  --heading-font-family: "playfair display", serif;
-  --default-font-family: "poppins", sans-serif;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
+  margin: 0;
 }
 
 h1,
@@ -16,85 +17,114 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font-family);
+  margin: 0;
 }
 
 h1 {
   font-size: 96px;
 }
-
 h2 {
   font-size: 46px;
 }
 
+h4 {
+  font-size: 20px;
+}
 p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+  margin: 0;
 }
 
-.logo {
-  max-width: 50px;
-  height: auto;
+footer {
+  margin: 70px;
+}
+
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
 }
 
 .navbar {
-  padding-top: 4px !important;
-  padding-bottom: 4px !important;
+  padding: 0;
+  min-height: 60px;
+  background-color: white;
+  box-shadow: none;
+}
+
+.navbar .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand img.logo {
-  max-height: 50px;
   width: auto;
+  max-height: 50px;
+  transition: max-height 0.3s ease;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-}
-
-nav img.logo {
-  margin-right: 20px;
-}
-
-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  display: inline;
-  margin-right: 10px;
-  list-style: none;
-}
-
-nav a {
+.navbar-nav .nav-link {
   color: #272142;
-  text-decoration: none;
   font-weight: 500;
-  transition: color 0.3s ease;
+  padding: 15px 10px;
+  transition: color 0.3s;
 }
 
-nav a:hover,
-nav li.active a {
+.navbar-nav .nav-link:hover,
+.navbar-nav .active .nav-link {
   color: var(--branding-color);
+}
+
+.navbar-toggler {
+  border: none;
+}
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.contact-box {
+  background: var(--secondary-color);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .navbar-brand img.logo {
+    max-height: 80px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-brand img.logo {
+    max-height: 100px;
+  }
 }
 
 .hero {
   background: var(--secondary-color);
   text-align: center;
-  padding: 100px 20px 60px;
+  padding: 80px 20px 40px;
 }
 
 .hero p {
   font-size: 36px;
   font-weight: bold;
-  margin: 0;
 }
 
 .hero h2 {
@@ -123,7 +153,11 @@ nav li.active a {
   padding: 15px 30px;
 }
 
-.world-clock-image {
+.world-clock-image,
+.croissant-image,
+.weather-forecast-app-image,
+.french-poem-image,
+.weather-forecast-image {
   width: 100%;
   max-width: 550px;
   height: 300px;
@@ -131,89 +165,41 @@ nav li.active a {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
   margin-top: 40px;
-}
-
-.world-clock-image:hover {
-  transform: scale(1.05);
-}
-
-.croissant-image {
-  width: 100%;
-  max-width: 550px;
-  height: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  margin-top: 40px;
-}
-.croissant-image:hover {
-  transform: scale(1.05);
-}
-
-.weather-forecast-app-image {
-  width: 100%;
-  max-width: 550px;
-  height: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  margin-top: 40px;
-}
-.weather-forecast-app-image:hover {
-  transform: scale(1.05);
-}
-
-.french-poem-image {
-  width: 100%;
-  max-width: 550px;
-  height: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
-  margin-top: 40px;
-}
-
-.french-poem-image:hover {
-  transform: scale(1.05);
-}
-
-.project-description {
-  padding: 40px 60px;
-}
-
-.weather-app-description {
-  margin-top: 40px;
-  padding: 40px 60px;
 }
 
 .weather-forecast-image {
-  width: 100%;
   max-width: 600px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
 }
+
+.world-clock-image:hover,
+.croissant-image:hover,
+.weather-forecast-app-image:hover,
+.french-poem-image:hover,
 .weather-forecast-image:hover {
   transform: scale(1.05);
 }
 
+.project-description,
+.weather-app-description {
+  padding: 40px 60px;
+  text-align: center;
+}
+
 .content-container {
   padding: 100px 10px;
-  margin-top: 0px;
+  margin-top: 0;
+  text-align: center;
 }
 
 .content-container h1 {
-  text-align: center;
   font-size: 40px;
   line-height: 40px;
 }
-
-.content-container h2 {
-  font-size: 20px;
-}
-
+.content-container h2,
 .content-container h3 {
   font-size: 20px;
+}
+.content-container h3 {
   font-weight: bold;
   font-family: var(--default-font-family);
 }
@@ -222,35 +208,28 @@ nav li.active a {
   font-size: 14px;
 }
 
-.content {
-  margin: 40px;
-}
-
 .profile-picture img {
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 768px) {
-  .navbar {
-    padding-top: 8px !important;
-    padding-bottom: 8px !important;
-  }
-
-  .navbar-brand img.logo {
-    max-height: 80px;
-  }
+.social-icons a {
+  margin: 15px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 14px;
+  transition: all 150ms ease-in-out;
 }
 
-.hero {
-  padding: 80px 20px 40px;
+.social-icons a:hover {
+  background: var(--branding-color);
+  color: white;
+  transform: scale(1.1);
 }
 
 @media (max-width: 960px) {
-  nav {
-    padding: 0px 0px;
-  }
-
   h1 {
     font-size: 50px;
   }
@@ -258,43 +237,13 @@ nav li.active a {
     font-size: 32px;
   }
 
-  .project-description {
-    padding: 0px;
-    text-align: center;
-  }
-
+  .project-description,
   .content-container {
-    text-align: center;
-    padding: 0px;
-    margin-top: 0px;
+    padding: 0;
   }
 
-  .content-container h1 {
-    margin-top: 0px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .logo {
-    max-width: 100px;
-  }
-
-  .navbar-brand img.logo {
-    max-height: 100px;
-  }
-
-  nav {
-    padding: 0 !important;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .content-container {
-    padding: 60px 0px;
-  }
-
-  .hero {
-    padding: 30px 20px 20px;
+  nav ul {
+    justify-content: center;
   }
 }
 
@@ -304,14 +253,9 @@ nav li.active a {
     align-items: flex-start;
     padding: 10px 20px;
   }
-
   nav ul {
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
-  }
-
-  .logo {
-    max-width: 45px;
   }
 }
