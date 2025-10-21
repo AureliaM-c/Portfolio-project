@@ -120,6 +120,7 @@ footer .email-link:hover {
   background: var(--secondary-color);
   text-align: center;
   padding: 80px 20px 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .hero p {
@@ -214,12 +215,12 @@ footer .email-link:hover {
 }
 
 .social-icons a {
-  margin: 15px;
+  margin: 5px;
   color: var(--branding-color);
   background: var(--secondary-color);
   padding: 10px;
   border-radius: 50%;
-  font-size: 14px;
+  font-size: 16px;
   transition: all 150ms ease-in-out;
 }
 
@@ -227,6 +228,14 @@ footer .email-link:hover {
   background: var(--branding-color);
   color: white;
   transform: scale(1.1);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
 }
 
 @media (max-width: 960px) {
@@ -257,5 +266,12 @@ footer .email-link:hover {
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
+  }
+  .social-icons {
+    gap: 8px;
+  }
+  .social-icons a {
+    padding: 8px;
+    font-size: 14px;
   }
 }
