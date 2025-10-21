@@ -37,8 +37,14 @@ p {
   height: auto;
 }
 
-.navbar .container {
-  padding: 0;
+.navbar {
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+
+.navbar-brand img.logo {
+  max-height: 50px;
+  width: auto;
 }
 
 nav {
@@ -46,7 +52,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 nav img.logo {
@@ -227,8 +232,13 @@ nav li.active a {
 }
 
 @media (min-width: 768px) {
-  .logo {
-    max-width: 80px;
+  .navbar {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  }
+
+  .navbar-brand img.logo {
+    max-height: 80px;
   }
 }
 
@@ -237,6 +247,10 @@ nav li.active a {
 }
 
 @media (max-width: 960px) {
+  nav {
+    padding: 0px 0px;
+  }
+
   h1 {
     font-size: 50px;
   }
@@ -261,15 +275,26 @@ nav li.active a {
 }
 
 @media (min-width: 1200px) {
-  nav {
-    padding: 20px 80px;
+  .logo {
+    max-width: 100px;
   }
+
+  .navbar-brand img.logo {
+    max-height: 100px;
+  }
+
+  nav {
+    padding: 0 !important;
+    margin: 0 auto;
+    width: 100%;
+  }
+
   .content-container {
     padding: 60px 0px;
   }
 
   .hero {
-    padding: 60px 20px 40px;
+    padding: 30px 20px 20px;
   }
 }
 
