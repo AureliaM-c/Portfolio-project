@@ -101,6 +101,28 @@ p {
   transform: scale(1.05);
 }
 
+.about-section {
+  padding: 160px 20px;
+}
+
+.about-section h1 {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.about-section h2 {
+  font-size: 20px;
+}
+
+.about-section-content {
+  margin: 40px;
+}
+
+.profile-picture img {
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 50px;
@@ -108,8 +130,14 @@ p {
   h2 {
     font-size: 32px;
   }
+
   .project-description {
     padding: 0px;
     text-align: center;
+  }
+
+  .about-section {
+    text-align: center;
+    padding: 0px;
   }
 }
