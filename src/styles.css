@@ -230,14 +230,12 @@ footer .email-link:hover {
   transform: scale(1.1);
 }
 
-/* Large screens */
 @media (min-width: 1200px) {
   .navbar-brand img.logo {
     max-height: 100px;
   }
 }
 
-/* Medium-large screens */
 @media (min-width: 768px) and (max-width: 1199px) {
   .navbar-brand img.logo {
     max-height: 80px;
